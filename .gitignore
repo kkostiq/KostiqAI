@@ -1,0 +1,44 @@
+# JetBrains IDEs folder
+.idea/
+
+# VSCode IDE folder
+.vscode/
+
+# Compiled output
+/build/
+/out/
+/run/
+/client-run/
+/server-run/
+
+# Log files
+logs/
+*.log
+
+# Gradle cache
+.gradle/
+gradle-user-home/
+
+# User-specific Gradle properties
+gradle.properties
+local.properties
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+
+# Mac OS folder attributes
+.DS_Store
+
+# Compiled JAR files (these should be in Releases, not the main repository)
+*.jar
+
+# Generated config files - The mod will generate these on first run
+/config/kostiqai.json
+/config/kostiqai_pending.jsonl

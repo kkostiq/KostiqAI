@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "kostiqai",
+  "version": "${version}",
+  "name": "KostiqAI",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kostiqai/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "kostiq.kostiqai.client.KostiqaiDataGenerator"
+    ],
+    "main": [
+      "kostiq.kostiqai.Kostiqai"
+    ]
+  },
+  "mixins": [
+    "kostiqai.mixins.json",
+    {
+      "config": "kostiqai.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
